@@ -1,0 +1,12 @@
+#but{
+    background-image: linear-gradient(to left, red, yellow);
+    color: white;
+    height: 40px;
+    width: 170px;
+    border-radius: 20px;
+    border-style: dotted;
+}
+#but:hover{
+    background-color: black;
+    color: black;
+}
