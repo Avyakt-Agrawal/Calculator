@@ -1,0 +1,38 @@
+<html>
+
+<head></head>
+
+<body>
+    <div id='div1'>
+        <p id=demo1> hello world</p>
+        <p id='demo'></p>
+    </div>
+    <button onclick='myfunction()'>remove element</button>
+    <button onclick='addfunction()'>add element</button>
+    <script>
+
+        function myfunction() {
+            var elmt = document.getElementById('demo1');
+            elmt.remove();
+        }
+        function addfunction() {
+            document.getElementById('demo').innerHTML = 'hello world';
+            var para = document.createElement('p');
+            var node = document.createTextNode('This is a node');
+            para.appendChild(node);
+            var elemnt = document.getElementById('div1');
+            elemnt.append(para)
+
+            }
+
+         
+    </script>
+</body>
+
+
+
+
+
+
+
+</html>

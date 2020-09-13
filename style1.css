@@ -1,0 +1,53 @@
+body{
+    background-color: silver;
+    font-family: cursive;
+}
+#wrapper{
+    margin-left: 400px;
+    margin-top: 200px;
+    width: 600px;
+    height: 700px;
+    
+}
+#page-banner{
+    background-color: blue;
+    text-align: center;
+    color: white;
+    height: 200px;
+    padding-top: 30px;
+}
+#add-movie{
+    background-color: blue;
+    text-align: center;
+    color: white;
+    height: 80px;
+    padding-top: 25px;
+}
+#movies{
+    background-color: lightblue;
+    height: 250px;
+    padding-top: 50px;
+    padding-left: 20px;
+
+}
+.delete{
+    float: right;
+    
+    background: #9361bf;
+    border-radius:4px;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+   
+}
+.delete:hover{
+    background:#333;
+}
+li{
+    padding-top: 10px;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
