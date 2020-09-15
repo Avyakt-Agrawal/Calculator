@@ -28,12 +28,33 @@ form.addEventListener('submit',function(e){
     var del=document.createElement('span');
     li.appendChild(muvi);
     li.appendChild(del);
-    li.appendChild(li);
+    list.appendChild(li);
     muvi.textContent = vall;
     del.textContent = 'delete';
 
     muvi.classList.add('name');
     del.classList.add('delete');
 });
+
+var searchMovie = document.querySelector('input[type="text"]');
+searchMovie.addEventListener('keyup', function(e){
+  var fltr = searchMovie.value.toUppercase();
+  var list = document.querySelector('#movies ul  ');
+  var fullli - list.querySelector('li');
+  var li = list.querySelectorAll('li .name');
+  for(i=0;i<li.length;i++){
+    var a=li[i].textContent;
+    var txtvalue = a.toUpperCase();
+    if(txtvalue.indexOf(fltr) > -1){
+      fullli[i].style.display = ""
+
+    }else{
+      fullli[i].style.display = "none"
+    }
+  }
+
+});
+
+
 
 
