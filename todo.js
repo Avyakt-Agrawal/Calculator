@@ -37,22 +37,20 @@ form.addEventListener('submit',function(e){
 });
 
 var searchMovie = document.querySelector('input[type="text"]');
-searchMovie.addEventListener('keyup', function(e){
-  var fltr = searchMovie.value.toUppercase();
-  var list = document.querySelector('#movies ul  ');
-  var fullli - list.querySelector('li');
-  var li = list.querySelectorAll('li .name');
-  for(i=0;i<li.length;i++){
-    var a=li[i].textContent;
-    var txtvalue = a.toUpperCase();
-    if(txtvalue.indexOf(fltr) > -1){
-      fullli[i].style.display = ""
-
-    }else{
-      fullli[i].style.display = "none"
+searchMovie.addEventListener('keyup',function(e){
+    var fltr = searchMovie.value.toUpperCase();
+    var list= document.querySelector('#movies ul');
+    var fullli = list.querySelectorAll('li');
+    var li = list.querySelectorAll('li .name');
+     for(i=0;i<li.length;i++){
+        var a=li[i].textContent;
+        var txtvalue = a.toUpperCase();
+         if(txtvalue.indexOf(fltr) > -1){
+            fullli[i].style.display = "";
+        }else{
+            fullli[i].style.display = "none";
+        }
     }
-  }
-
 });
 
 
